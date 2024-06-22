@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    
+        <nav>
+            <ul>
+                <li><a href="{% url 'landing' %}">Home</a></li>
+                <li><a href="{% url 'timeline' %}">Timeline</a></li>
+            </ul>
+        </nav>
+        
+    
+    <section class="timeline-section">
+        <h2>Historical Events</h2>
+        <img src="{% static '603045_1_En_24_Fig3_HTML.png' %}" alt="Historical Events">
+        <p></p>
+        <img src="{% static '603045_1_En_24_Fig1_HTML (1).png' %}" alt="Historical Events">
+        <p></p>
+    
+    </section>
+</body>
+</html>

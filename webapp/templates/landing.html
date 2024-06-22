@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alula Adventure</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header style="background-image: url('static/image-asset.jpeg');">
+        <nav>
+            <ul>
+                <li><a href="{% url 'landing' %}">Home</a></li>
+                <li><a href="{% url 'timeline' %}">Timeline</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Alula Adventure</h1>
+            <p>Embark on a thrilling journey through the captivating history and exciting activities of Alula.</p>
+            <a href={% url 'timeline' %} class="btn">Explore</a>
+        </div>
+    </header>
+    <section class="image-gallery">
+        <div class="gallery-container">
+            <div class="gallery-item"><img src="{% static 'WhatsApp Image 2024-05-06 at 5.24.26 PM (1).jpeg' %}" alt="Description of image 1"></div>
+            <div class="gallery-item"><img src="{% static 'WhatsApp Image 2024-05-06 at 5.24.26 PM (2).jpeg' %}" alt="Description of image 2"></div>
+            <div class="gallery-item"><img src="{% static 'WhatsApp Image 2024-05-06 at 5.24.26 PM.jpeg' %}" alt="Description of image 3"></div>
+            <div class="gallery-item"><img src="{% static 'WhatsApp Image 2024-05-06 at 5.24.27 PM.jpeg' %}" alt="Description of image 4"></div>
+            <div class="gallery-item"><img src="{% static 'best-things-to-do-in-alula-hegra.jpg' %}" alt="Description of image 4"></div>
+        </div>
+    </section>
+    
+            
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    alert('You are going to see ALULA timeline...'); // Replace this with actual navigation if needed
+                });
+            });
+        });
+        </script>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                galleryItems.forEach(item => {
+                    item.addEventListener('click', function() {
+                        // Example: Navigate to a link or perform some action
+                        window.location.href = "timeline"; // Change URL as needed
+                    });
+                });
+            });
+            </script>
+            </body>
+            
+</html>
